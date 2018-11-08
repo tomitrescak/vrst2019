@@ -254,12 +254,18 @@ body {
 .hero-content .entry-header .entry-meta-date {
   position: absolute;
   width: 100%;
-  top: 20px;
+  top: -20px;
+  left: 100px;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: hsl(0, 0%, 90%);
   text-align: center;
+}
+
+.entry-meta-description {
+  left: inherit;
+  top: 20px;
 }
 
 .entry-meta-description {
@@ -336,7 +342,6 @@ body {
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-  min-height: 4640px;
   width: 100%;
   padding-bottom: 120px;
   background: url('/static/images/middle-cover.jpg') no-repeat;
@@ -722,7 +727,7 @@ body {
 # home-page-last-news
 ------------------------------------------------------------*/
 .home-page-last-news {
-  margin-top: 220px;
+  padding-top: 100px;
 }
 
 .home-page-last-news .entry-title p {
@@ -756,6 +761,7 @@ body {
   background: -webkit-linear-gradient(#00d0ff, #25ffbf);
   font-size: 20px;
   font-weight: 500;
+  color: hsl(0, 0%, 100%);
 }
 
 .home-page-last-news-wrap .box-link-date a {
@@ -771,6 +777,7 @@ body {
 .home-page-last-news-wrap .featured-image {
   margin: 0;
   padding: 0;
+  background-color: black;
   box-shadow: 10px 40px 115px 27px rgba(0, 0, 0, 0.1);
 }
 
@@ -1007,6 +1014,10 @@ body {
 
 .main-content {
   margin: 120px 0;
+}
+
+.main-content.page {
+  margin: 60px 0;
 }
 
 .main-content .entry-header .entry-title p {
@@ -1947,4 +1958,39 @@ body {
 
 .icon-box-3 .entry-header::before {
   content: '03.';
+}
+
+.container {
+  color: #333;
+}
+
+.fader:after {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+  width: 400px;
+  height: 100%;
+}
+
+.sponsors img {
+  margin-right: 12px;
+}
+
+.page-header.venue {
+  background: url('/static/images/venue.jpg') no-repeat;
+  background-size: cover;
+}
+
+/* .figure {
+  text-align: center !important;
+  margin: 40px 0px !important;
+} */
+
+.figure div {
+  font-style: italic;
+  margin-top: 12px;
 }
