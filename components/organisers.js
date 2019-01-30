@@ -74,8 +74,8 @@ export const Organisers = () => (
 
               <a href="http://sigai.acm.org">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/en/thumb/2/22/Acmsigai.svg/977px-Acmsigai.svg.png"
-                  alt="SIGAI"
+                  src="https://vrst.acm.org/vrst2018/image/sponsors/subsidy_acmsiggraph.png"
+                  alt="ACM Siggraph"
                   height="100"
                 />
               </a>
