@@ -1,169 +1,170 @@
-import { makeUrl } from "./common";
-import React, { Component } from "react";
+import { makeUrl } from './common';
+import React, { Component } from 'react';
 
 const InitialState = {
   Team: [
     {
-      Position: "Symposium General Chair",
+      Position: 'Symposium General Chair',
       Group: [
         {
-          Name: ["Tomas Trescak (Western Sydney University)"],
-          Contact: ["chairs.2019@vrst.acm.org"],
+          Name: ['Tomas Trescak (Western Sydney University)'],
+          Contact: ['chairs.2019@vrst.acm.org'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Symposium Chairs",
+      Position: 'Symposium Chairs',
       Group: [
         {
-          Name: ["Simeon Simoff (Western Sydney University)"],
-          Contact: ["chairs.2019@vrst.acm.org"],
+          Name: ['Simeon Simoff (Western Sydney University)'],
+          Contact: ['chairs.2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Deborah Richards (Western Sydney University)"],
-          Contact: ["chairs.2019@vrst.acm.org"],
+          Name: ['Deborah Richards (Western Sydney University)'],
+          Contact: ['chairs.2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Anton Bogdanovych (Western Sydney University)"],
-          Contact: ["chairs.2019@vrst.acm.org"],
+          Name: ['Anton Bogdanovych (Western Sydney University)'],
+          Contact: ['chairs.2019@vrst.acm.org'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Web Chair",
+      Position: 'Program Chairs',
       Group: [
         {
-          Name: ["Gilbert Zhuo (Western Sydney University)"],
-          Contact: ["GilbertZhuo@gmail.com"],
-          Hover: false
-        }
-      ]
-    },
-    {
-      Position: "Program Chairs",
-      Group: [
-        {
-          Name: ["Thierry Duval (Western Sydney University)"],
-          Contact: ["papers2019@vrst.acm.org"],
+          Name: ['Thierry Duval (Western Sydney University)'],
+          Contact: ['papers2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Torsten Kuhlen (RWTH Aachen University)"],
-          Contact: ["papers2019@vrst.acm.org"],
+          Name: ['Torsten Kuhlen (RWTH Aachen University)'],
+          Contact: ['papers2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Huyen Nguyen (University of New South Wales)"],
-          Contact: ["papers2019@vrst.acm.org"],
+          Name: ['Huyen Nguyen (University of New South Wales)'],
+          Contact: ['papers2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Shigeo Morishima (University of Waseda)"],
-          Contact: ["papers2019@vrst.acm.org"],
+          Name: ['Shigeo Morishima (University of Waseda)'],
+          Contact: ['papers2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Huyen Nguyen (University of Osaka)"],
-          Contact: ["papers2019@vrst.acm.org"],
+          Name: ['Huyen Nguyen (University of Osaka)'],
+          Contact: ['papers2019@vrst.acm.org'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Publicity Chairs",
+      Position: 'Demo Chairs',
       Group: [
         {
-          Name: ["Danielle Aiken (MARCS Institute)"],
-          Contact: ["industry.2019@vrst.acm.org"],
-          Hover: false
-        }
-      ]
-    },
-    {
-      Position: "Demo Chairs",
-      Group: [
-        {
-          Name: ["Richard Skarbez (La Trobe)"],
-          Contact: ["demos2019@vrst.acm.org"],
+          Name: ['Richard Skarbez (La Trobe)'],
+          Contact: ['demos2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Anton Bogdanovych (Western Sydney University)"],
-          Contact: ["demos2019@vrst.acm.org"],
+          Name: ['Anton Bogdanovych (Western Sydney University)'],
+          Contact: ['demos2019@vrst.acm.org'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Poster Chair",
+      Position: 'Publicity Chairs',
       Group: [
         {
-          Name: ["Martin Masek (Edith Cowan University)"],
-          Contact: ["posters2019@vrst.acm.org"],
+          Name: ['Danielle Aiken (MARCS Institute)'],
+          Contact: ['industry.2019@vrst.acm.org'],
+          Hover: false
+        }
+      ]
+    },
+
+    {
+      Position: 'Poster Chair',
+      Group: [
+        {
+          Name: ['Martin Masek (Edith Cowan University)'],
+          Contact: ['posters2019@vrst.acm.org'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Sponsorship Chairs",
+      Position: 'Sponsorship Chairs',
       Group: [
         {
-          Name: ["Kerry Holling (Western Sydney University)"],
-          Contact: ["industry.2019@vrst.acm.org"],
+          Name: ['Kerry Holling (Western Sydney University)'],
+          Contact: ['industry.2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Scott Lyall(Western Sydney University)"],
-          Contact: ["industry.2019@vrst.acm.org"],
+          Name: ['Scott Lyall(Western Sydney University)'],
+          Contact: ['industry.2019@vrst.acm.org'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Industry Chair",
+      Position: 'Industry Chair',
       Group: [
         {
-          Name: ["Chris Stanton (MARCS Institute)"],
-          Contact: ["industry.2019@vrst.acm.org"],
+          Name: ['Chris Stanton (MARCS Institute)'],
+          Contact: ['industry.2019@vrst.acm.org'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Student Volunteers Chair",
+      Position: 'Web Chair',
       Group: [
         {
-          Name: ["Sara Baker (Western Sydney University)"],
-          Contact: ["industry.2019@vrst.acm.org"],
+          Name: ['Gilbert Zhuo (Western Sydney University)'],
+          Contact: ['GilbertZhuo@gmail.com'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Publications Chair",
+      Position: 'Student Volunteers Chair',
       Group: [
         {
-          Name: ["Stephen N Spencer (University of Washington)"],
-          Contact: ["chairs.2019@vrst.acm.org"],
+          Name: ['Sara Baker (Western Sydney University)'],
+          Contact: ['industry.2019@vrst.acm.org'],
           Hover: false
         }
       ]
     },
     {
-      Position: "Local Chairs",
+      Position: 'Publications Chair',
       Group: [
         {
-          Name: ["Belinda Ruiz (Western Sydney University)"],
-          Contact: ["chairs.2019@vrst.acm.org"],
+          Name: ['Stephen N Spencer (University of Washington)'],
+          Contact: ['chairs.2019@vrst.acm.org'],
+          Hover: false
+        }
+      ]
+    },
+    {
+      Position: 'Local Chairs',
+      Group: [
+        {
+          Name: ['Belinda Ruiz (Western Sydney University)'],
+          Contact: ['chairs.2019@vrst.acm.org'],
           Hover: false
         },
         {
-          Name: ["Sara Baker (Western Sydney University)"],
-          Contact: ["chairs.2019@vrst.acm.org"],
+          Name: ['Sara Baker (Western Sydney University)'],
+          Contact: ['chairs.2019@vrst.acm.org'],
           Hover: false
         }
       ]
@@ -206,7 +207,7 @@ export default class teamstructure extends Component {
 
   render() {
     var letterStyle = {
-      fontFamily: "Times New Roman",
+      fontFamily: 'Times New Roman',
       fontSize: 15,
       display: `block`
     };
