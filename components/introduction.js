@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { CountDown } from './countdown';
+import { makeUrl } from './common';
 
 export const Introduction = () => (
   <div className="hero-content">
@@ -22,8 +23,8 @@ export const Introduction = () => (
       <div className="row">
         <div className="col-12 ">
           <div className="entry-footer">
-            <a href="" className="btn">
-              Details Coming Soon!
+            <a href={makeUrl('/submissions')} className="btn">
+              Submission Instructions
             </a>
             {/* <a href="#" className="btn current">
                     See Lineup
