@@ -13,8 +13,7 @@ const news = [
             information on the venue. Keynote announcements and the CFP are coming soon!`
   },
   {
-    title:
-      "Keynote by Mark Walsh the former creative director of Pixar Animation",
+    title: "Keynote by Mark Walsh, Pixar Animation Studios",
     date: "January 30, 2019",
     author: "Gilbert Zhuo",
     image: "/static/images/news/Mark-Walsh-News.jpg",

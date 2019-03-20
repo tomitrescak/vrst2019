@@ -25,10 +25,7 @@ const Desktop = () => (
             <nav className="site-navigation" style={header}>
               <ul>
                 <li>
-                  <a href={makeUrl("/")} style={styling}>
-                    {" "}
-                    >HOME
-                  </a>
+                  <a href={makeUrl("/")}>HOME</a>
                 </li>
 
                 <li>
