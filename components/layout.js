@@ -8,7 +8,7 @@ import '../css/style.css';
 import { Header } from '../components/header';
 
 export const Layout = ({ children }) => (
-  <div>
+  <div className="bodyBack">
     <Head>
       <link
         href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"

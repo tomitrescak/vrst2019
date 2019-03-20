@@ -1,16 +1,16 @@
-import * as React from "react";
+import * as React from 'react';
 
 const speakers = [
   {
-    title: "SIGCHI Student Travel Grants",
-    link: "https://sigchi.org/conferences/student-travel-grants/",
-    image: "/static/images/scholarships/SmartTravelGrant.png",
+    title: 'SIGCHI Student Travel Grants',
+    link: 'https://sigchi.org/conferences/student-travel-grants/',
+    image: '/static/images/scholarships/SmartTravelGrant.png',
     text: `The SIGCHI Student Travel Grant is a program that provides assistance for students with accepted contributions to attend SIGCHI (co)sponsored conferences.`
   },
   {
-    title: "Gary Marsden Student Development Fund",
-    link: "https://sigchi.org/2017/01/gary-marsden-student-development-fund/",
-    image: "/static/images/scholarships/SmartTravelGrant.png",
+    title: 'Gary Marsden Student Development Fund',
+    link: 'https://sigchi.org/2017/01/gary-marsden-student-development-fund/',
+    image: '/static/images/scholarships/SmartTravelGrant.png',
     text: `The Gary Marsden Student Development Fund is a special fund to provide assistance for students from the developing world to attend events including, HCI related conferences.`
   }
 ];
@@ -28,17 +28,13 @@ export const StudentScholarships = () => (
             <div className="card-deck">
               {speakers.map((_speakers, i) => (
                 <div className="card" key={i}>
-                  <img src={_speakers.image} class="card-img-top" alt="image" />
+                  <img src={_speakers.image} className="card-img-top" alt="image" />
                   <div className="card-body">
                     <h5 className="card-title">{_speakers.title}</h5>
                     <p className="card-text">{_speakers.text}</p>
                   </div>
                   <div className="card-footer">
-                    <a
-                      class="btn btn-secondary"
-                      href={_speakers.link}
-                      role="button"
-                    >
+                    <a className="btn btn-secondary" href={_speakers.link} role="button">
                       MORE INFO
                     </a>
                   </div>

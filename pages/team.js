@@ -1,15 +1,15 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { Layout } from "../components/layout";
-import { PageHeader } from "../components/page_header";
-import { makeUrl } from "../components/common";
-import TeamStructure from "./../components/teamstructure";
+import { Layout } from '../components/layout';
+import { PageHeader } from '../components/page_header';
+import { makeUrl } from '../components/common';
+import TeamStructure from './../components/teamstructure';
 
 const Team = () => (
   <Layout>
     <PageHeader title="Team" cls="venue" />
 
-    <div class="main-content page">
+    <div className="main-content page">
       <TeamStructure />
     </div>
   </Layout>

@@ -8,7 +8,8 @@ module.exports = withCSS({
       '/accessibility': { page: '/accessibility' },
       '/keynote': { page: '/keynote' },
       '/scholarships': { page: '/scholarships' },
-      '/team': { page: '/team' }
+      '/team': { page: '/team' },
+      '/visa': { page: '/visa' }
     };
   },
   assetPrefix: process.env.NODE_ENV === 'production' ? '/vrst2019/' : ''

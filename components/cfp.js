@@ -1,4 +1,5 @@
 import React from 'react';
+import { redBright } from 'ansi-colors';
 
 export const CFP = () => (
   <div>
@@ -20,72 +21,76 @@ export const CFP = () => (
                 Western Sydney University, from Tuesday, November 12 to Friday, November 15, 2019.
                 The event is sponsored by ACM SIGCHI and SIGGRAPH.
               </p>
-              <p>
-                <strong>
-                  {' '}
-                  <br /> Main Track{' '}
-                </strong>
-              </p>
-              <table cellspacing="0" cellpadding="0" border="0">
-                <tbody>
-                  <tr>
-                    <td>
-                      <p>&middot; VR/AR/MR(=XR) technology and devices</p>
-                      <p>
-                        &middot; Advanced display technologies and immersive projection technologies
-                      </p>
-                      <p>&middot; Low-latency and high-performance XR</p>
-                      <p>&middot; Multi-user and distributed XR</p>
-                      <p>&middot; XR software infrastructures</p>
-                      <p>&middot; XR authoring systems</p>
-                      <p>&middot; Human interaction and collaborative techniques for XR</p>
-                      <p>&middot; Input devices for XR</p>
-                      <p>&middot; Tracking and sensing</p>
-                      <p>&middot; Multisensory and multimodal system for XR</p>
-                      <p>&middot; Brain-computer interfaces</p>
-                      <p>&middot; Haptics, smell and taste</p>
-                      <p>&middot; Audio and music processing for XR</p>
-                      <p>&middot; Sound synthesis for XR</p>
-                      <p>&middot; Computer vision and computer graphics techniques for XR</p>
-                      <p>&middot; Immersive simulations in XR</p>
-                    </td>
-                    <td>
-                      <p>&middot; Immersive analytics</p>
-                      <p>&middot; Modelling and simulation</p>
-                      <p>&middot; Real-time physics-based modelling</p>
-                      <p>&middot; Real-time rendering</p>
-                      <p>&middot; Physically based rendering for XR</p>
-                      <p>&middot; Avatars and virtual humans in XR</p>
-                      <p>&middot; Tele-operation and telepresence</p>
-                      <p>&middot; Performance testing &amp; evaluation</p>
-                      <p>&middot; Locomotion and navigation in virtual environments</p>
-                      <p>&middot; Perception, presence, virtual embodiment, and cognition</p>
-                      <p>&middot; Teleoperation and telepresence</p>
-                      <p>&middot; Computer animation for XR</p>
-                      <p>&middot; XR applications (e.g. training systems, medical systems ...)</p>
-                      <p>&middot; XR for fabrication</p>
-                      <p>&middot; Innovative HCI approaches in XR</p>
-                      <p>
-                        &middot; Multi-disciplinary research projects involving innovative use of XR
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <p>
-                <strong> Poster and Demo Tracks </strong>
-              </p>
-              <p>
-                <a name="docs-internal-guid-49b684a9-7fff-6772-25" /> &middot; VRST 2019 welcomes
-                posters and demos on all topics of the main track
-              </p>
-              <p>
-                <strong> &nbsp; </strong>
-              </p>
-              <p>
-                <strong> Industry Track </strong>
-              </p>
-              <p>&middot; XR in industry, challenges, solutions and innovations</p>
+              <div style={{ background: 'rgb(0,0,0,0.2)', borderRadius: '12px', padding: '12px' }}>
+                <p>
+                  <strong>
+                    {' '}
+                    <br /> Main Track{' '}
+                  </strong>
+                </p>
+                <table cellspacing="0" cellpadding="0" border="0">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <p>&middot; VR/AR/MR(=XR) technology and devices</p>
+                        <p>
+                          &middot; Advanced display technologies and immersive projection
+                          technologies
+                        </p>
+                        <p>&middot; Low-latency and high-performance XR</p>
+                        <p>&middot; Multi-user and distributed XR</p>
+                        <p>&middot; XR software infrastructures</p>
+                        <p>&middot; XR authoring systems</p>
+                        <p>&middot; Human interaction and collaborative techniques for XR</p>
+                        <p>&middot; Input devices for XR</p>
+                        <p>&middot; Tracking and sensing</p>
+                        <p>&middot; Multisensory and multimodal system for XR</p>
+                        <p>&middot; Brain-computer interfaces</p>
+                        <p>&middot; Haptics, smell and taste</p>
+                        <p>&middot; Audio and music processing for XR</p>
+                        <p>&middot; Sound synthesis for XR</p>
+                        <p>&middot; Computer vision and computer graphics techniques for XR</p>
+                        <p>&middot; Immersive simulations in XR</p>
+                      </td>
+                      <td>
+                        <p>&middot; Immersive analytics</p>
+                        <p>&middot; Modelling and simulation</p>
+                        <p>&middot; Real-time physics-based modelling</p>
+                        <p>&middot; Real-time rendering</p>
+                        <p>&middot; Physically based rendering for XR</p>
+                        <p>&middot; Avatars and virtual humans in XR</p>
+                        <p>&middot; Tele-operation and telepresence</p>
+                        <p>&middot; Performance testing &amp; evaluation</p>
+                        <p>&middot; Locomotion and navigation in virtual environments</p>
+                        <p>&middot; Perception, presence, virtual embodiment, and cognition</p>
+                        <p>&middot; Teleoperation and telepresence</p>
+                        <p>&middot; Computer animation for XR</p>
+                        <p>&middot; XR applications (e.g. training systems, medical systems ...)</p>
+                        <p>&middot; XR for fabrication</p>
+                        <p>&middot; Innovative HCI approaches in XR</p>
+                        <p>
+                          &middot; Multi-disciplinary research projects involving innovative use of
+                          XR
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  <strong> Poster and Demo Tracks </strong>
+                </p>
+                <p>
+                  <a name="docs-internal-guid-49b684a9-7fff-6772-25" /> &middot; VRST 2019 welcomes
+                  posters and demos on all topics of the main track
+                </p>
+                <p>
+                  <strong> &nbsp; </strong>
+                </p>
+                <p>
+                  <strong> Industry Track </strong>
+                </p>
+                <p>&middot; XR in industry, challenges, solutions and innovations</p>
+              </div>
             </td>
             <td width="261" style={{ verticalAlign: 'top' }}>
               <h3>
@@ -131,6 +136,9 @@ export const CFP = () => (
                 </strong>
               </p>
               <p>Conference in Sydney, Australia</p>
+              <h3>
+                <strong> Organisers </strong>
+              </h3>
               <p>
                 <strong> Symposium General Chair: </strong>
                 <br />
@@ -206,8 +214,8 @@ export const CFP = () => (
               </p>
               <p>
                 Please use the ACM SIGCHI Conferences Submission System to submit your work:{' '}
-                <a href="applewebdata://7D4C14F1-268D-4713-96F8-3F2E79FBC49D/%20http:/precisionconference.com/~sigchi">
-                  http://precisionconference.com/~sigchi
+                <a href="https://new.precisionconference.com/~sigchi">
+                  https://new.precisionconference.com/~sigchi
                 </a>
               </p>
               <p>
