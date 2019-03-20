@@ -1,7 +1,5 @@
 import React from "react";
-
 import Head from "next/head";
-
 import "../css/bootstrap.css";
 import "../css/fontawesome-all.min.css";
 import "../css/style.css";

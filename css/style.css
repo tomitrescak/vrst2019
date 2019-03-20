@@ -6,14 +6,14 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: normal;
   color: hsl(0, 0%, 90%);
 }
 
 @font-face {
-  font-family: 'mountains';
+  font-family: "mountains";
   src: url(/static/fonts/beyond_the_mountains.ttf);
   src: url(/static/fonts/beyond_the_mountains.otf);
   font-weight: 400;
@@ -232,7 +232,7 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
   padding: 220px 0;
-  background: url('/static/images/cover.jpg') no-repeat;
+  background: url("/static/images/cover.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -256,7 +256,7 @@ body {
   width: 100%;
   top: -20px;
   left: 100px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: hsl(0, 0%, 90%);
@@ -344,7 +344,7 @@ body {
 .content-section {
   width: 100%;
   padding-bottom: 120px;
-  background: url('/static/images/middle-cover.jpg') no-repeat;
+  background: url("/static/images/middle-cover.jpg") no-repeat;
   background-size: 100% auto;
 }
 
@@ -463,7 +463,9 @@ body {
     width: calc(100% + 75px);
   }
 
-  .lineup-artists .lineup-artists-wrap:nth-of-type(even) .lineup-artists-description-container {
+  .lineup-artists
+    .lineup-artists-wrap:nth-of-type(even)
+    .lineup-artists-description-container {
     right: -75px;
     left: auto;
   }
@@ -833,7 +835,7 @@ body {
 
 .site-footer::before {
   position: absolute;
-  content: ' ';
+  content: " ";
   height: 100%;
   width: 100%;
   z-index: 3;
@@ -937,7 +939,7 @@ body {
 # about-us
 ------------------------------------------------------------*/
 .about-us {
-  background: url('/static/images/about-us-background.jpg') no-repeat;
+  background: url("/static/images/about-us-background.jpg") no-repeat;
   width: 100%;
   height: 100%;
 }
@@ -967,7 +969,7 @@ body {
 }
 
 .about-us .page-header {
-  background: url('/static/images/about-us-header-background.jpg') no-repeat;
+  background: url("/static/images/about-us-header-background.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -993,7 +995,7 @@ body {
 }
 
 .page-header .breadcrumbs li::after {
-  content: '/';
+  content: "/";
   position: absolute;
   top: 3px;
   right: 0;
@@ -1105,7 +1107,14 @@ body {
 ------------------------------------------------------------*/
 .testimonial-wrap {
   position: relative;
-  background-image: linear-gradient(to bottom, #0196bf, #00a0bc, #00a9b3, #00b1a4, #1bb791);
+  background-image: linear-gradient(
+    to bottom,
+    #0196bf,
+    #00a0bc,
+    #00a9b3,
+    #00b1a4,
+    #1bb791
+  );
 }
 
 .testimonials-container,
@@ -1238,7 +1247,7 @@ body {
 # tickets-page
 ------------------------------------------------------------*/
 .tickets-page {
-  background: url('/static/images/elements-total-background.jpg') no-repeat;
+  background: url("/static/images/elements-total-background.jpg") no-repeat;
   width: 100%;
   height: 100%;
 }
@@ -1247,7 +1256,7 @@ body {
 # Page Header
 ------------------------------------------------------------*/
 .tickets-page .page-header {
-  background: url('/static/images/tickets-page-header-background.jpg') no-repeat;
+  background: url("/static/images/tickets-page-header-background.jpg") no-repeat;
 }
 
 .tickets-page .tabs {
@@ -1484,14 +1493,14 @@ body {
 .blog-page {
   width: 100%;
   height: 100%;
-  background: url('/static/images/blog-page-background.jpg') no-repeat;
+  background: url("/static/images/blog-page-background.jpg") no-repeat;
 }
 
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
 .blog-page .page-header {
-  background: url('/static/images/blog-header-background.jpg') no-repeat;
+  background: url("/static/images/blog-header-background.jpg") no-repeat;
 }
 
 .blog-list-page .single-blog-content {
@@ -1586,14 +1595,14 @@ body {
 # contact-page
 ------------------------------------------------------------*/
 .contact-page {
-  background: url('/static/images/contact-background-image.jpg') no-repeat;
+  background: url("/static/images/contact-background-image.jpg") no-repeat;
 }
 
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
 .contact-page .page-header {
-  background: url('/static/images/contact-header-background.jpg') no-repeat;
+  background: url("/static/images/contact-header-background.jpg") no-repeat;
 }
 
 .contact-page .main-content {
@@ -1686,8 +1695,8 @@ body {
   margin-top: 120px;
 }
 
-.contact-page .contact-form input[type='text'],
-.contact-page .contact-form input[type='email'],
+.contact-page .contact-form input[type="text"],
+.contact-page .contact-form input[type="email"],
 .contact-page .contact-form textarea {
   width: 100%;
   padding: 14px 22px;
@@ -1698,8 +1707,8 @@ body {
   outline: none;
 }
 
-.contact-page .contact-form input[type='text']::placeholder,
-.contact-page .contact-form input[type='email']::placeholder,
+.contact-page .contact-form input[type="text"]::placeholder,
+.contact-page .contact-form input[type="email"]::placeholder,
 .contact-page .contact-form textarea::placeholder {
   color: #7f7f7f;
   font-style: italic;
@@ -1722,11 +1731,11 @@ body {
 # elements-page
 ------------------------------------------------------------*/
 .elements-page {
-  background: url('/static/images/elements-total-background.jpg') no-repeat;
+  background: url("/static/images/elements-total-background.jpg") no-repeat;
 }
 
 .elements-page .page-header {
-  background: url('/static/images/elements-header-background.jpg') no-repeat;
+  background: url("/static/images/elements-header-background.jpg") no-repeat;
 }
 
 .elements-page .elements-wrap {
@@ -1857,11 +1866,11 @@ body {
 }
 
 .accordion-and-tabs-wrap .accordion-wrap .entry-title .arrow-d::before {
-  content: '-';
+  content: "-";
 }
 
 .accordion-and-tabs-wrap .accordion-wrap .entry-title .arrow-r::before {
-  content: '+';
+  content: "+";
 }
 
 .accordion-and-tabs-wrap .accordion-wrap .active {
@@ -1922,7 +1931,7 @@ body {
 
 .icon-box .entry-header::before {
   position: absolute;
-  content: '01.';
+  content: "01.";
   top: -18px;
   font-size: 48px;
   font-weight: 500;
@@ -1949,15 +1958,15 @@ body {
 }
 
 .icon-box-1 .entry-header::before {
-  content: '01.';
+  content: "01.";
 }
 
 .icon-box-2 .entry-header::before {
-  content: '02.';
+  content: "02.";
 }
 
 .icon-box-3 .entry-header::before {
-  content: '03.';
+  content: "03.";
 }
 
 .container {
@@ -1965,13 +1974,17 @@ body {
 }
 
 .fader:after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: 100;
   bottom: 0;
   left: 0;
   pointer-events: none;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 50%);
+  background-image: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1) 50%
+  );
   width: 400px;
   height: 100%;
 }
@@ -1981,7 +1994,7 @@ body {
 }
 
 .page-header.venue {
-  background: url('/static/images/venue.jpg') no-repeat;
+  background: url("/static/images/venue.jpg") no-repeat;
   background-size: cover;
 }
 

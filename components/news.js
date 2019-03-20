@@ -1,23 +1,32 @@
-import * as Reacxt from 'react';
-import { makeUrl } from './common';
+import * as Reacxt from "react";
+import { makeUrl } from "./common";
 
 const news = [
   {
-    title: 'Website Launched!',
-    date: 'November 6, 2018',
-    author: 'Tomas Trescak',
-    image: '/static/images/news/website.jpg',
+    title: "Website Launched!",
+    date: "November 6, 2018",
+    author: "Tomas Trescak",
+    image: "/static/images/news/website.jpg",
     text: `While we are looking forward to VRST 2018 and SIGGRAPH Asia 2018 in Tokyo, 
             we are also working hard to make your experience unique during the 25th VRST 
             in Sydney, Australia. Today, we are launching our new website with 
             information on the venue. Keynote announcements and the CFP are coming soon!`
   },
   {
-    title: 'Keynote by Mark Walsh the former creative director of Pixar Animation',
-    date: 'January 30, 2019',
-    author: 'Gilbert Zhuo',
-    image: '/static/images/news/Mark-Walsh-News.jpg',
+    title:
+      "Keynote by Mark Walsh the former creative director of Pixar Animation",
+    date: "January 30, 2019",
+    author: "Gilbert Zhuo",
+    image: "/static/images/news/Mark-Walsh-News.jpg",
     text: `Mark Walsh is an 18 year veteran of Pixar Animation Studios. He directed the Toy Story short, PartySaurus Rex, supervised animation on Ratatouille and Finding Nemo, and contributed to nearly every project at the studio, including A Bug’s Life, Toy Story 2, Monsters Inc, The Incredibles, Presto, The Good Dinosaur, Cars 3, Up, and Toy Story 3 ...`
+  },
+  {
+    title: "Keynote by Professor Mark Billingurst from UNISA",
+    date: " MAY 30, 2019",
+    author: "Gilbert Zhuo",
+    image: "/static/images/news/Mark-Billinghurst.png",
+    text: `Mark Billinghurst is Professor of Human Computer Interaction at the University of South Australia in Adelaide, Australia. 
+    He earned a PhD in 2002 from the University of Washington and researches innovative computer interfaces that explore how virtual and real worlds can be merged, publishing over 300 papers in topics such as wearable computing, Augmented Reality and mobile interfaces. `
   }
 ];
 
