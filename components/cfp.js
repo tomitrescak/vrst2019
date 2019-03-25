@@ -1,5 +1,6 @@
 import React from 'react';
 import { redBright } from 'ansi-colors';
+import { makeUrl } from './common';
 
 export const CFP = () => (
   <div>
@@ -190,7 +191,7 @@ export const CFP = () => (
           <strong> Submission Information </strong>
         </p>
         <p>
-          The deadline for Research and Industrial Papers submissions is July 31, 2019 (23:59 AOE)
+          The deadline for Research and Industrial Papers submissions is July 19, 2019 (23:59 AOE)
           and the deadline for Posters and Demos submissions is August 15, 2019 (23:59 AOE).
         </p>
         <p>
@@ -219,7 +220,7 @@ export const CFP = () => (
         <p>
           <img
             align="left"
-            src="/static/images/siggraph.png"
+            src={makeUrl('/static/images/siggraph.png')}
             alt="logo"
             width="145"
             height="58"
