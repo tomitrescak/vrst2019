@@ -1,4 +1,4 @@
-import { makeUrl } from './common';
+import { makeUrl } from "./common";
 
 export const Organisers = () => (
   <>
@@ -13,7 +13,7 @@ export const Organisers = () => (
 
         <div className="home-page-last-news-wrap  sponsors">
           <div className="row">
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: "center" }}>
               <a href="https://www.westernsydney.edu.au">
                 <img
                   alt="WSU"
@@ -31,7 +31,10 @@ export const Organisers = () => (
               </a>
 
               <a href="https://www.unsw.edu.au">
-                <img src="https://www.unsw.edu.au/sites/default/files/UNSW_0.png" height="100" />
+                <img
+                  src="https://www.unsw.edu.au/sites/default/files/UNSW_0.png"
+                  height="100"
+                />
               </a>
 
               <a href="https://www.westernsydney.edu.au/marcs">
@@ -57,9 +60,12 @@ export const Organisers = () => (
           </div>
         </div>
 
-        <div className="home-page-last-news-wrap sponsors">
+        <div
+          className="home-page-last-news-wrap sponsors"
+          style={{ paddingBottom: "4em" }}
+        >
           <div className="row">
-            <div style={{ textAlign: 'center' }}>
+            <div style={{ textAlign: "center" }}>
               <a href="https://www.acm.org">
                 <img
                   src="https://vrst.acm.org/vrst2017/sites/default/files/inline-images/acm-logo-long.png"
@@ -69,7 +75,11 @@ export const Organisers = () => (
               </a>
 
               <a href="https://sigchi.org">
-                <img src={makeUrl('/static/images/sigchi.png')} alt="" height="100" />
+                <img
+                  src={makeUrl("/static/images/sigchi.png")}
+                  alt=""
+                  height="100"
+                />
               </a>
 
               <a href="http://sigai.acm.org">

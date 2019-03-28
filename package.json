@@ -10,6 +10,7 @@
     "@zeit/next-css": "^1.0.1",
     "next": "^7.0.2",
     "react": "^16.8.3",
+    "react-app-polyfill": "^0.2.2",
     "react-burger-menu": "^2.6.5",
     "react-dom": "^16.7.0",
     "react-sidemenu": "^1.1.0",
