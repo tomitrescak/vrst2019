@@ -233,15 +233,20 @@ export default class teamstructure extends Component {
               {chunkArray(InitialState.Team, 2).map((col, i) => (
                 <div className="row" key={i}>
                   {col.map(_Team => (
-                    <div key={_Team.Position} className="w-50 ">
+                    <div key={_Team.Position} className="w-50">
                       <h5>
-                        <span className="badge badge-pill badge-secondary col-sm-10 ">
+                        <span className="badge badge-dark col-sm-10 ">
                           {_Team.Position}
                         </span>
                       </h5>
                       {_Team.Group.map(_Group => (
                         <h6 key={_Group.Name}>
-                          <a href={`mailto:${_Group.Contact}`}>{_Group.Name}</a>
+                          <a
+                            href={`mailto:${_Group.Contact}`}
+                            style={{ color: "black" }}
+                          >
+                            {_Group.Name}
+                          </a>
                         </h6>
                       ))}
                     </div>

@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { Layout } from '../components/layout';
-import { PageHeader } from '../components/page_header';
-import { makeUrl } from '../components/common';
-import TeamStructure from './../components/teamstructure';
-import { CFP } from '../components/cfp';
+import { Layout } from "../components/layout";
+import { PageHeader } from "../components/page_header";
+import { makeUrl } from "../components/common";
+import TeamStructure from "./../components/teamstructure";
+import { CFP } from "../components/cfp";
 
 const Team = () => (
   <Layout>

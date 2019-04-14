@@ -11,6 +11,7 @@ import { Organisers } from "../components/organisers";
 import { Layout } from "../components/layout";
 import { Venue } from "../components/venue";
 import { Keynotes } from "./../components/keynotes";
+import TeamStructure from "./../components/teamstructure";
 
 export default class Home extends React.Component {
   render() {
@@ -23,6 +24,7 @@ export default class Home extends React.Component {
           <Video />
           <News />
           <Organisers />
+          <TeamStructure />
           <Venue />
         </div>
       </Layout>
