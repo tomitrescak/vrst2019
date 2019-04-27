@@ -29,7 +29,9 @@ export const Layout = ({ children }) => (
           <div className="row">
             <div className="col-12">
               <div className="entry-title">
-                <a href="/">VRST 2019</a>
+                <a href="/" style={{ color: '#f9ab1a' }}>
+                  VRST 2019
+                </a>
               </div>
 
               <div className="entry-mail">

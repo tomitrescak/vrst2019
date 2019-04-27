@@ -35,6 +35,57 @@ body {
   background: url('/static/images/middle-cover-25.jpg') no-repeat;
 }
 
+.header {
+  padding-bottom: 30px;
+}
+
+.cfp-important {
+  margin-bottom: 10px;
+  border-bottom: dotted 1px #141e21;
+  height: 35px;
+}
+
+.badge-vrst {
+  border-radius: 6px;
+  background-color: #0aceae;
+  padding: 6px;
+  color: white;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+.mail-vrst {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  font-size: 14px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+  color: #141e21;
+  background-color: #f9ab1a;
+  border: solid 1px #a5a5a5;
+  border-radius: 6px;
+}
+
+.mail-vrst:hover {
+  color: #141e21;
+  text-decoration: none;
+}
+
+.cfp-section p {
+  margin-top: 16px;
+}
+
+.cfp-header {
+  border-bottom: solid 2px lightgray;
+}
+
+.cfp-bullet {
+  font-size: 1.5rem;
+  color: #f9ab1a;
+}
+
 /*------------------------------------------------------------
 # site-header
 ------------------------------------------------------------*/
@@ -256,20 +307,25 @@ body {
   margin: 0;
   font-family: mountains;
   font-size: 120px;
-  background: -webkit-linear-gradient(#a3ee4b, #eeeb33);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .entry-meta-description,
 .hero-content .entry-header .entry-meta-date {
-  position: absolute;
   width: 100%;
-  top: -20px;
   left: 100px;
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 500;
   color: hsl(0, 0%, 90%);
+}
+
+.hero-content .entry-header .entry-meta-date {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.hero-content .entry-header {
   text-align: center;
 }
 
@@ -280,8 +336,6 @@ body {
 
 .entry-meta-description {
   position: relative;
-  margin-top: -80px;
-  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 992px) {
@@ -331,6 +385,12 @@ body {
   }
 }
 
+@media (max-width: 1200px) {
+  .logo {
+    width: 500px;
+  }
+}
+
 .countdown-holder label {
   display: block;
   font-size: 18px;
@@ -357,7 +417,7 @@ body {
 
 .hero-content .entry-footer a:hover,
 .hero-content .entry-footer .current {
-  background: -webkit-linear-gradient(#a3ee4b, #eeeb33);
+  background-color: #f9ab1a;
   color: hsl(0, 0%, 0%);
 }
 
@@ -367,7 +427,7 @@ body {
 .content-section {
   width: 100%;
   padding-bottom: 120px;
-  background: url('/static/images/middle-cover.jpg') no-repeat;
+  background: url('/static/images/middle-cover-25.jpg') no-repeat;
   background-size: 100% auto;
 }
 
@@ -750,7 +810,7 @@ body {
 # home-page-last-news
 ------------------------------------------------------------*/
 .home-page-last-news {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 .home-page-last-news .entry-title p {
@@ -764,7 +824,7 @@ body {
 .home-page-last-news .entry-title h2 {
   width: 100%;
   margin: 0;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
   color: hsl(0, 0%, 0%);
 }
@@ -773,7 +833,7 @@ body {
 ## home-page-last-news-wrap
 ------------------------------------------------------------*/
 .home-page-last-news-wrap {
-  margin-top: 110px;
+  margin-top: 70px;
 }
 
 .home-page-last-news-wrap .box-link-date {
@@ -781,7 +841,7 @@ body {
   top: 120px;
   left: 0;
   padding: 10px 25px;
-  background: -webkit-linear-gradient(#00d0ff, #25ffbf);
+  background-color: #0aceae;
   font-size: 20px;
   font-weight: 500;
   color: hsl(0, 0%, 100%);
@@ -800,7 +860,7 @@ body {
 .home-page-last-news-wrap .featured-image {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #141e21;
   box-shadow: 10px 40px 115px 27px rgba(0, 0, 0, 0.1);
   max-height: 185px;
   overflow: hidden;
@@ -2021,6 +2081,11 @@ body {
   background-size: cover;
 }
 
+.page-header.submissions {
+  background: url('/static/images/vr.jpg') no-repeat;
+  background-size: cover;
+}
+
 /* .figure {
   text-align: center !important;
   margin: 40px 0px !important;
@@ -2032,6 +2097,6 @@ body {
 }
 
 .chevron {
-  color: #e7ee24;
+  color: #f9ab1a;
   font-weight: bold;
 }

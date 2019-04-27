@@ -10,9 +10,8 @@ export const Introduction = () => (
           <div className="row">
             <div className="col-12 offset-lg-2 col-lg-10">
               <div className="entry-header">
-                <h2>VRST</h2>
-
                 <div className="entry-meta-date">November 12-15, 2019</div>
+                <img src={makeUrl('/static/images/vrst_logo_black.png')} className="logo" />
                 <div className="entry-meta-description">
                   25th ACM Symposium on Virtual Reality Software and Technology
                 </div>
@@ -30,7 +29,7 @@ export const Introduction = () => (
           >
             Tweets by vrst2019
           </a>{' '}
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
+          <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
         </div>
       </div>
       <div className="row">

@@ -1,13 +1,13 @@
-import * as React from "react";
-import { makeUrl } from "./common";
-import { Navbar, Nav } from "react-bootstrap";
+import * as React from 'react';
+import { makeUrl } from './common';
+import { Navbar, Nav } from 'react-bootstrap';
 var header = {
-  background: "rgba(255, 255, 255, 0.1)",
-  padding: "10px",
+  background: 'rgba(255, 255, 255, 0.1)',
+  padding: '10px',
   borderRadius: 15
 };
 var styling = {
-  color: "white"
+  color: 'white'
 };
 
 const Desktop = () => (
@@ -17,53 +17,57 @@ const Desktop = () => (
         <div className="row align-items-center">
           <div className="col-12 col-lg-2">
             <h1 className="site-branding flex">
-              <a href={makeUrl("/")}>VRST 2019</a>
+              <a href={makeUrl('/')}>
+                <img src={makeUrl('/static/images/vrst_logo.png')} style={{ width: '160px' }} />
+              </a>
             </h1>
           </div>
           <div className="col-2 col-lg-10">
             <nav className="site-navigation" style={header}>
               <ul>
                 <li>
-                  <a href={makeUrl("/")} style={styling}>
+                  <a href={makeUrl('/')} style={styling}>
                     <span className="chevron">&gt;</span> HOME
                   </a>
                 </li>
                 <li>
-                  <a href={makeUrl("/submissions")} style={styling}>
+                  <a href={makeUrl('/submissions')} style={styling}>
                     <span className="chevron">&gt;</span> SUBMISSIONS
                   </a>
                 </li>
                 <li>
-                  <a href={makeUrl("/venue")} style={styling}>
+                  <a href={makeUrl('/#registration')}>
+                    <span className="chevron">&gt;</span> REGISTRATION
+                  </a>
+                </li>
+                <li>
+                  <a href={makeUrl('/#venue')} style={styling}>
                     <span className="chevron">&gt;</span> VENUE
                   </a>
                 </li>
                 <li>
-                  <a href={makeUrl("/keynote")} style={styling}>
+                  <a href={makeUrl('/#keynotes')} style={styling}>
                     <span className="chevron">&gt;</span> KEYNOTES
                   </a>
                 </li>
                 <li>
-                  <a href={makeUrl("/scholarships")} style={styling}>
+                  <a href={makeUrl('/#scholarships')} style={styling}>
                     <span className="chevron">&gt;</span> STUDENT SCHOLARSHIPS
                   </a>
                 </li>
                 <li>
-                  <a href={makeUrl("/accessibility")} style={styling}>
+                  <a href={makeUrl('/accessibility')} style={styling}>
                     <span className="chevron">&gt;</span> ACCESSIBILITY
                   </a>
                 </li>
                 <li>
-                  <a href={makeUrl("/visa")} style={styling}>
+                  <a href={makeUrl('/#visa')} style={styling}>
                     <span className="chevron">&gt;</span> VISA
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="mailto:t.trescak@westernsydney.edu.au"
-                    style={styling}
-                  >
-                    {" "}
+                  <a href="mailto:t.trescak@westernsydney.edu.au" style={styling}>
+                    {' '}
                     <i className="fas fa-envelope" />
                     &nbsp;&nbsp;CONTACT
                   </a>
@@ -89,26 +93,34 @@ const Mobile = () => (
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
         <li>
-          <a href={makeUrl("/")}>HOME</a>
+          <a href={makeUrl('/')}>HOME</a>
         </li>
         <li>
-          <a href={makeUrl("/venue")}>VENUE</a>
+          <a href={makeUrl('/submissions')} style={styling}>
+            SUBMISSIONS
+          </a>
         </li>
         <li>
-          <a href={makeUrl("/keynote")}>KEYNOTES</a>
+          <a href={makeUrl('/#venue')}>VENUE</a>
         </li>
         <li>
-          <a href={makeUrl("/scholarships")}>STUDENT SCHOLARSHIPS</a>
+          <a href={makeUrl('/#registration')}>REGISTRATION</a>
         </li>
         <li>
-          <a href={makeUrl("/accessibility")}>ACCESSIBILITY</a>
+          <a href={makeUrl('/#keynotes')}>KEYNOTES</a>
         </li>
         <li>
-          <a href={makeUrl("/visa")}>VISA</a>
+          <a href={makeUrl('/#scholarships')}>STUDENT SCHOLARSHIPS</a>
+        </li>
+        <li>
+          <a href={makeUrl('/accessibility')}>ACCESSIBILITY</a>
+        </li>
+        <li>
+          <a href={makeUrl('/#visa')}>VISA</a>
         </li>
         <li>
           <a href="mailto:t.trescak@westernsydney.edu.au">
-            {" "}
+            {' '}
             <i className="fas fa-envelope" />
             &nbsp;&nbsp;CONTACT
           </a>
@@ -128,11 +140,11 @@ export class Header extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener("resize", this.updateDimensions);
+    window.addEventListener('resize', this.updateDimensions);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateDimensions);
+    window.removeEventListener('resize', this.updateDimensions);
   }
 
   updateDimensions() {

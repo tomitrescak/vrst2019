@@ -7,7 +7,7 @@ import { Faqs } from '../components/faqs';
 
 const Accessibility = () => (
   <Layout>
-    <PageHeader title="Accessibility" cls="venue" />
+    <PageHeader title="Accessibility" cls="submissions" />
 
     <div className="main-content page">
       <Faqs />
