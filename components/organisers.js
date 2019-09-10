@@ -23,7 +23,7 @@ export const Organisers = () => (
           </a>
 
           <a href="https://www.westernsydney.edu.au/marcs">
-            <img src="https://image.ibb.co/mqSvye/marcs.png" alt="marcs" border="0" height="100" />
+            <img src={makeUrl('/static/images/marcs.jpg')} alt="marcs" border="0" height="100" />
           </a>
         </div>
       </div>

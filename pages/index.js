@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import '../css/bootstrap.css';
 import '../css/fontawesome-all.min.css';
 import '../css/style.css';
@@ -9,6 +8,8 @@ import { News } from '../components/news';
 import { Video } from '../components/video';
 import { Organisers } from '../components/organisers';
 import { Layout } from '../components/layout';
+import Head from 'next/head';
+
 import { Venue } from '../components/venue';
 import { Keynotes } from './../components/keynotes';
 import TeamStructure from './../components/teamstructure';

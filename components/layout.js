@@ -10,6 +10,8 @@ import { Header } from '../components/header';
 export const Layout = ({ children }) => (
   <div className="bodyBack">
     <Head>
+      <title>VRST 2019: Virtual Reality Software and Technology Symposium</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link
         href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
         rel="stylesheet"

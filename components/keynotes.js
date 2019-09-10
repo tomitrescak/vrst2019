@@ -31,7 +31,7 @@ const speakers = [
     job: ' Professor of Human Computer Interaction',
     date: 'TBH',
     image: '/static/images/news/Mark-Billinghurst-p.png',
-    bio: `Dr. Mark Billinghurst is one of the worldâ€™s leading augmented reality researchers, focusing on innovative computer interfaces that explore how virtual and real worlds can be merged.Â Director of the HIT Lab New Zealand (HIT Lab NZ) at the University of Canterbury in New Zealand, he has produced over 250 technical publications and presented demonstrations and courses at a wide variety of conferences. `,
+    bio: `Dr. Mark Billinghurst is one of the world's leading augmented reality researchers, focusing on innovative computer interfaces that explore how virtual and real worlds can be merged. Former director of the HIT Lab New Zealand (HIT Lab NZ) at the University of Canterbury in New Zealand, he has produced over 250 technical publications and presented demonstrations and courses at a wide variety of conferences.`,
     about: 'text'
   }
 ];

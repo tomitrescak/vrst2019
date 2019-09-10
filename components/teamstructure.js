@@ -23,7 +23,7 @@ const InitialState = {
           Hover: false
         },
         {
-          Name: ['Deborah Richards (Western Sydney University)'],
+          Name: ['Deborah Richards (Macquarie University)'],
           Contact: ['chairs.2019@vrst.acm.org'],
           Hover: false
         },
@@ -94,7 +94,7 @@ const InitialState = {
       Group: [
         {
           Name: ['Sara Baker (Western Sydney University'],
-          Contact: ['accessibility@vrst.acm.org'],
+          Contact: ['s.baker3@westernsydney.edu.au'],
           Hover: false
         }
       ]
@@ -183,6 +183,109 @@ const InitialState = {
   ]
 };
 
+const pcm = [
+  'Adcock, Matt',
+  'Ammi, Mehdi',
+  'Billinghurst, Mark',
+  'Boulic, Ronan',
+  'Bowman, Doug',
+  'Bruckner, Stefan',
+  'Bruder, Gerd',
+  'Bues, Matthias',
+  'Chen, Bing-Yu',
+  'Chen, Hsiang-Ting',
+  'Chen, Jian',
+  'Chi, Ming-Te',
+  'Chu, Hung-Kuo',
+  'Chuang, Yung-Yu',
+  'Coquillart, Sabine',
+  'Cui, Zhaopeng',
+  'Dey, Arindam',
+  'Dodiya, Janki',
+  'Doerner, Ralf',
+  'Dwyer, Tim',
+  'Ens, Barrett',
+  'Ferrise, Francesco',
+  'Figueroa, Pablo',
+  'Fleury, Cedric',
+  'Fu, Chi-Wing',
+  'Fuhrmann, Arnulph',
+  'Fujita, Kazuyuki',
+  'Guo, Rongkai',
+  'He, Ying',
+  'Hoang, Thuong',
+  'Hoermann, Simon',
+  'Hu, Shi',
+  'Igarashi, Yuki',
+  'Ijiri, Takashi',
+  'Interrante, Victoria',
+  'Itoh, Yuta',
+  'Jarabo, Adrian',
+  'Johnsen, Kyle',
+  'Jones, Andrew',
+  'Jorge, Joaquim',
+  'Jung, Sungchul',
+  'Kalkofen, Denis',
+  'Keefe, Daniel',
+  'Kim, Gerard',
+  'Kim, Min H.',
+  'Koike, Takafumi',
+  'KOIZUMI, Naoya',
+  'Lai, Yu-Chi',
+  'Latoschik, Marc',
+  'Lee, Gun',
+  'Lee, Tong',
+  'Ljung, Patric',
+  'Lourdeaux, Domitile',
+  'Ma, Kwan',
+  'Mestre, daniel',
+  'Mitchell, Kenny',
+  'Mousas, Christos',
+  'Mukai, Tomohiko',
+  'Narumi, Takuji',
+  'Nedel, Luciana',
+  'Oishi, Takeshi',
+  'Olivier, Anne-Hélène',
+  'Oshita, Masaki',
+  'Ozell, Benoit',
+  'Pan, Ye',
+  'Piumsomboon, Thammathip',
+  'Plopski, Alexander',
+  'Querrec, Ronan',
+  'Reiners, Dirk',
+  'Robb, Andrew',
+  'Sadagic, Amela',
+  'Saito, Hideo',
+  'Sanders, Betsy',
+  'Serafin, Stefania',
+  'Shum, Hubert',
+  'Sigemasu, Hiroaki',
+  'Skarbez, Richard',
+  'Steinberger, Markus',
+  'Steinicke, Frank',
+  'Stuerzlinger, Wolfgang',
+  'Su, Simon',
+  'Sugimoto, Maki',
+  'Suma Rosenberg, Evan',
+  'Takashima, Kazuki',
+  'Takayama, Kenshi',
+  'Tatzgern, Markus',
+  'Teschner, Matthias',
+  'THOUVENIN, Indira',
+  'Toyoura, Masahiro',
+  'Valkov, Dimitar',
+  'Wang, Dangxiao',
+  'Weyers, Benjamin',
+  'Woźniak, Paweł W.',
+  'Yamamoto, Goshiro',
+  'Yamamoto, Kazuhiko',
+  'Yamasaki, Toshihiko',
+  'Yanagida, Yasuyuki',
+  'Yang, Xubo',
+  'Yu, Lap-Fai',
+  'Zhao, Shuang'
+];
+
 function chunkArray(myArray, chunk_size) {
   var index = 0;
   var arrayLength = myArray.length;
@@ -217,32 +320,41 @@ export default class teamstructure extends Component {
   }
 
   render() {
-    var letterStyle = {
-      fontFamily: 'Times New Roman',
-      fontSize: 15,
-      display: `block`
-    };
     return (
-      <PageSection title="Organisation Team">
-        {chunkArray(InitialState.Team, 2).map((col, i) => (
-          <div className="row" key={i}>
-            {col.map(_Team => (
-              <div key={_Team.Position} className="w-50">
-                <h5>
-                  <span className="badge badge-dark col-sm-10 ">{_Team.Position}</span>
-                </h5>
-                {_Team.Group.map(_Group => (
-                  <h6 key={_Group.Name}>
-                    <a href={`mailto:${_Group.Contact}`} style={{ color: 'black' }}>
-                      {_Group.Name}
-                    </a>
-                  </h6>
-                ))}
-              </div>
-            ))}
-          </div>
-        ))}
-      </PageSection>
+      <>
+        <PageSection title="Organisation Team" id="team">
+          {chunkArray(InitialState.Team, 2).map((col, i) => (
+            <div className="row" key={i}>
+              {col.map(_Team => (
+                <div key={_Team.Position} className="w-50">
+                  <h5>
+                    <span className="badge badge-dark col-sm-10 ">{_Team.Position}</span>
+                  </h5>
+                  {_Team.Group.map(_Group => (
+                    <h6 key={_Group.Name}>
+                      <a href={`mailto:${_Group.Contact}`} style={{ color: 'black' }}>
+                        {_Group.Name}
+                      </a>
+                    </h6>
+                  ))}
+                </div>
+              ))}
+            </div>
+          ))}
+        </PageSection>
+
+        <PageSection title="Program Committee Members">
+          {chunkArray(pcm, 4).map((col, i) => (
+            <div className="row" key={i}>
+              {col.map(_Team => (
+                <div key={i} className="w-25">
+                  {_Team}
+                </div>
+              ))}
+            </div>
+          ))}
+        </PageSection>
+      </>
     );
   }
 }

@@ -11,18 +11,18 @@ var styling = {
 };
 
 const Desktop = () => (
-  <header className="site-header">
+  <header className="site-header desktop">
     <div className="header-bar">
       <div className="container-fluid">
-        <div className="row align-items-center">
-          <div className="col-12 col-lg-2">
+        <div className="topMenuDesktop">
+          <div className="logo">
             <h1 className="site-branding flex">
               <a href={makeUrl('/')}>
                 <img src={makeUrl('/static/images/vrst_logo.png')} style={{ width: '160px' }} />
               </a>
             </h1>
           </div>
-          <div className="col-2 col-lg-10">
+          <div className="menu">
             <nav className="site-navigation" style={header}>
               <ul>
                 <li>
@@ -41,6 +41,11 @@ const Desktop = () => (
                   </a>
                 </li>
                 <li>
+                  <a href={makeUrl('/sponsors')}>
+                    <span className="chevron">&gt;</span> SPONSORS
+                  </a>
+                </li>
+                <li>
                   <a href={makeUrl('/#venue')} style={styling}>
                     <span className="chevron">&gt;</span> VENUE
                   </a>
@@ -51,8 +56,18 @@ const Desktop = () => (
                   </a>
                 </li>
                 <li>
+                  <a href={makeUrl('/#team')}>
+                    <span className="chevron">&gt;</span> TEAM
+                  </a>
+                </li>
+                <li>
                   <a href={makeUrl('/#scholarships')} style={styling}>
                     <span className="chevron">&gt;</span> STUDENT SCHOLARSHIPS
+                  </a>
+                </li>
+                <li>
+                  <a href={makeUrl('/showcase')} style={styling}>
+                    <span className="chevron">&gt;</span> DEVELOPER SHOWCASE
                   </a>
                 </li>
                 <li>
@@ -87,7 +102,7 @@ const Desktop = () => (
 );
 
 const Mobile = () => (
-  <Navbar bg="light" expand="lg">
+  <Navbar bg="dark" expand="lg" variant="dark" className="mobile">
     <Navbar.Brand href="#home">VRST 2019</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
@@ -107,10 +122,16 @@ const Mobile = () => (
           <a href={makeUrl('/#registration')}>REGISTRATION</a>
         </li>
         <li>
+          <a href={makeUrl('/sponsors')}>SPONSORS</a>
+        </li>
+        <li>
           <a href={makeUrl('/#keynotes')}>KEYNOTES</a>
         </li>
         <li>
           <a href={makeUrl('/#scholarships')}>STUDENT SCHOLARSHIPS</a>
+        </li>
+        <li>
+          <a href={makeUrl('/showcase')}>DEVELOPER SHOWCASE</a>
         </li>
         <li>
           <a href={makeUrl('/accessibility')}>ACCESSIBILITY</a>
@@ -131,34 +152,12 @@ const Mobile = () => (
 );
 
 export class Header extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      width: 1000
-    };
-    this.updateDimensions = this.updateDimensions.bind(this);
-  }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.updateDimensions);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.updateDimensions);
-  }
-
-  updateDimensions() {
-    this.setState({
-      width: window.innerWidth
-    });
-  }
-
   render() {
-    let windowWidth = this.state.width;
-    if (windowWidth < 1000) {
-      return <Mobile />;
-    } else {
-      return <Desktop />;
-    }
+    return (
+      <>
+        <Mobile />
+        <Desktop />
+      </>
+    );
   }
 }

@@ -1,5 +1,7 @@
 import * as React from 'react';
 
+import Head from 'next/head';
+
 import { Layout } from '../components/layout';
 import { PageHeader } from '../components/page_header';
 import { makeUrl } from '../components/common';

@@ -216,9 +216,13 @@ export const CFP = () => (
 
       <Section title="Invitation to journal / SIGGRAPH">
         <p>
-          TVCG could invite 2 or 3 best papers from VRST 2018, but authors should submit their
-          extended version after conference (with 30%+ new materials). Selected best paper will also
-          be invited to present as postern in 2019 SIGGRAPH ASIA in Brisbane.
+          The{' '}
+          <a href="https://www.journals.elsevier.com/computers-and-graphics" target="_blank">
+            Computers and Graphics (CAG) Journal
+          </a>{' '}
+          could invite 2 or 3 best papers from VRST 2019, but authors should submit their extended
+          version after conference (with 30%+ new materials). Selected best paper will also be
+          invited to present as postern in 2019 SIGGRAPH ASIA in Brisbane.
         </p>
       </Section>
     </div>
@@ -248,7 +252,7 @@ export const CFP = () => (
 
       <Section title="Call for Posters">
         <p>
-          The 2018 ACM Symposium on Virtual Reality Software invites prospective authors to submit
+          The 2019 ACM Symposium on Virtual Reality Software invites prospective authors to submit
           poster papers (2 pages). All accepted posters will be included in the conference
           proceedings and in the conference program for a presentation in a dedicated session.
         </p>
@@ -311,7 +315,7 @@ export const CFP = () => (
 
       <Section title="Call for Demos">
         <p>
-          The 2018 ACM Symposium on Virtual Reality Software and Technology seeks hands-on
+          The 2019 ACM Symposium on Virtual Reality Software and Technology seeks hands-on
           demonstrations sharing novel interactive technologies and experiences among the VR
           community. We encourage demonstrations of novel and innovative prototypes, devices,
           interaction techniques or systems from any area of virtual reality that are presentable in

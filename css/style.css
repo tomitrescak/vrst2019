@@ -31,6 +31,15 @@ body {
   max-width: 20%;
 }
 
+.topMenuDesktop {
+  display: flex;
+}
+
+.topMenuDesktop .logo {
+  flex: 1 1 180px;
+  margin-right: 20px;
+}
+
 .bodyBack {
   background: url('/static/images/middle-cover-25.jpg') no-repeat;
 }
@@ -43,6 +52,30 @@ body {
   margin-bottom: 10px;
   border-bottom: dotted 1px #141e21;
   height: 35px;
+}
+
+table.sponsors {
+  border-spacing: 2px;
+  border-collapse: separate;
+}
+
+table.sponsors td,
+table.sponsors th {
+  background-color: #0aceae;
+}
+
+table.sponsors th {
+  padding: 24px 6px;
+}
+
+table.sponsors td {
+  padding: 6px;
+  margin: 1px;
+}
+
+table.sponsors td.yellow,
+table.sponsors th.yellow {
+  background-color: #f9ab1a;
 }
 
 .badge-vrst {
@@ -204,6 +237,14 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+.navbar-nav li {
+  font-size: 18px;
+}
+
+.navbar-nav li a {
+  color: #ddd;
+}
+
 .site-navigation.show {
   height: auto;
 }
@@ -240,13 +281,63 @@ body {
   padding-left: 40px;
 }
 
+@media (max-width: 1200px) {
+  .logo {
+    width: 500px;
+  }
+}
+
+@media (max-width: 660px) {
+  .logo {
+    width: 300px;
+  }
+}
+
 @media screen and (max-width: 1560px) {
   .site-navigation ul li {
     margin-bottom: 12px;
   }
 }
 
+@media screen and (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
+
+  .hero-content {
+    padding-top: 50px !important;
+  }
+}
+
 @media screen and (min-width: 992px) {
+  .countdown-holder {
+    min-width: 100px;
+  }
+
+  .countdown-holder .dday,
+  .countdown-holder .dhour,
+  .countdown-holder .dmin,
+  .countdown-holder .dsec {
+    font-size: 52px;
+  }
+
+  .hero-content .entry-header h2 {
+    font-size: 172px;
+  }
+
+  .hero-content .entry-header .entry-meta-date {
+    top: -10px;
+    left: 150px;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .header-bar .site-branding {
     margin-left: 35px;
   }
@@ -285,6 +376,19 @@ body {
 
   .site-navigation ul li a {
     color: #fff;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .countdown-holder .dday,
+  .countdown-holder .dhour,
+  .countdown-holder .dmin,
+  .countdown-holder .dsec {
+    font-size: 32px !important;
+  }
+
+  .countdown-holder {
+    min-width: 40px !important;
   }
 }
 
@@ -338,17 +442,6 @@ body {
   position: relative;
 }
 
-@media screen and (min-width: 992px) {
-  .hero-content .entry-header h2 {
-    font-size: 172px;
-  }
-
-  .hero-content .entry-header .entry-meta-date {
-    top: -10px;
-    left: 150px;
-  }
-}
-
 /*------------------------------------------------------------
 ## countdown
 ------------------------------------------------------------*/
@@ -370,25 +463,6 @@ body {
   font-weight: 600;
   line-height: 1;
   color: hsl(0, 0%, 100%);
-}
-
-@media (min-width: 992px) {
-  .countdown-holder {
-    min-width: 100px;
-  }
-
-  .countdown-holder .dday,
-  .countdown-holder .dhour,
-  .countdown-holder .dmin,
-  .countdown-holder .dsec {
-    font-size: 52px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .logo {
-    width: 500px;
-  }
 }
 
 .countdown-holder label {
