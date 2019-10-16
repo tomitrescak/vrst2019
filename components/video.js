@@ -34,7 +34,7 @@ export const Video = () => (
               <h2>Important Dates</h2>
             </div>
 
-            <p>
+            {/* <p>
               AoE (Anywhere on Earth)
               <br />{' '}
               <strong>
@@ -66,7 +66,16 @@ export const Video = () => (
                 <em> September 22, 2019 (23:59 AoE) </em>{' '}
               </strong>
             </p>
-            <p>Camera-ready papers, posters, and demos</p>
+            <p>Camera-ready papers, posters, and demos</p> */}
+            <p>
+              AoE (Anywhere on Earth)
+              <br />{' '}
+              <strong>
+                {' '}
+                <em> November 1, 2019 </em>{' '}
+              </strong>
+            </p>
+            <p>Submission for Developer Showcase</p>
             <p>
               <strong>
                 {' '}

@@ -216,7 +216,6 @@ export const CFP = () => (
 
       <Section title="Invitation to journal / SIGGRAPH">
         <p>
-          The{' '}
           <a href="https://www.journals.elsevier.com/computers-and-graphics" target="_blank">
             Computers and Graphics (CAG) Journal
           </a>{' '}

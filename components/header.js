@@ -41,6 +41,11 @@ const Desktop = () => (
                   </a>
                 </li>
                 <li>
+                  <a href={makeUrl('/program')}>
+                    <span className="chevron">&gt;</span> PROGRAM
+                  </a>
+                </li>
+                <li>
                   <a href={makeUrl('/sponsors')}>
                     <span className="chevron">&gt;</span> SPONSORS
                   </a>
@@ -120,6 +125,9 @@ const Mobile = () => (
         </li>
         <li>
           <a href={makeUrl('/#registration')}>REGISTRATION</a>
+        </li>
+        <li>
+          <a href={makeUrl('/program')}>PROGRAM</a>
         </li>
         <li>
           <a href={makeUrl('/sponsors')}>SPONSORS</a>

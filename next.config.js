@@ -7,7 +7,8 @@ module.exports = withCSS({
       '/submissions': { page: '/submissions' },
       '/accessibility': { page: '/accessibility' },
       '/sponsors': { page: '/sponsors' },
-      '/showcase': { page: '/showcase' }
+      '/showcase': { page: '/showcase' },
+      '/program': { page: '/program' }
       // '/scholarships': { page: '/scholarships' },
       // '/team': { page: '/team' },
       // '/visa': { page: '/visa' }

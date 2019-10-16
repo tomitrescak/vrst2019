@@ -3,18 +3,32 @@ import { PageSection } from './page_section';
 import { makeUrl } from './common';
 
 const speakers = [
+  // {
+  //   title: 'Virtual Reality Event',
+  //   name: 'Timoni West',
+  //   job: 'Director of Pixar Animation Studios',
+  //   date: 'TBH',
+  //   image: '/static/images/timoni-west.jpg',
+  //   bio: `Timoni West is the Director of XR Research at Unity, where she leads a team of cross-disciplinary artists and engineers exploring new interfaces for human-computer interaction. Currently, her team focuses on spatial computing: how we will live, work, and create in a world where digital objects and the real world live side-by-side. One of her team’s first tools, EditorXR, a tool for editing Unity projects directly in virtual reality, won SF Design Week’s first-ever Virtual Tech award in 2018.
+
+  //   A longtime technologist, Timoni was formerly SVP at Alphaworks, co-founder of Recollect, and CEO of Department of Design, a digital agency. She's worked for startups across the country, including Foursquare, Flickr, Causes, and Airtime.
+
+  //   Timoni serves on the OVA board and is an advisor to Tvori and Spatial Studios, among others. In 2017, Timoni was listed in Next Reality News’ Top 50 to Watch. Additionally, she serves on XRDC’s advisory board, is a Sequoia Scout, and was a jury member for ADC’s 2018 Awards in Experiential Design.`,
+  //   about: 'text'
+  // },
   {
     title: 'Virtual Reality Event',
-    name: 'Timoni West',
-    job: 'Director of Pixar Animation Studios',
+    name: 'Aleissia Laidacker',
+    job: 'Director of Developer Experience at Magic Leap',
     date: 'TBH',
-    image: '/static/images/timoni-west.jpg',
-    bio: `Timoni West is the Director of XR Research at Unity, where she leads a team of cross-disciplinary artists and engineers exploring new interfaces for human-computer interaction. Currently, her team focuses on spatial computing: how we will live, work, and create in a world where digital objects and the real world live side-by-side. One of her team’s first tools, EditorXR, a tool for editing Unity projects directly in virtual reality, won SF Design Week’s first-ever Virtual Tech award in 2018.
+    image: '/static/images/aleissia.jpg',
+    bio: `Technology and Design Director with 20 years experience in product design, AI, systems and game development. A leader in the Augmented Reality / Mixed Reality space, where she leads as Director of Developer Experience at Magic Leap. She is an advocate for emergent technologies and leads teams focused on the future of AI, Mixed Reality and Immersive Design. 
 
-    A longtime technologist, Timoni was formerly SVP at Alphaworks, co-founder of Recollect, and CEO of Department of Design, a digital agency. She's worked for startups across the country, including Foursquare, Flickr, Causes, and Airtime.
+    She co-founded Mixed Flour, which is an Immersive Design Company focused on creating location-based experiences that bring together Food, Technology and Interaction Design. 
     
-    Timoni serves on the OVA board and is an advisor to Tvori and Spatial Studios, among others. In 2017, Timoni was listed in Next Reality News’ Top 50 to Watch. Additionally, she serves on XRDC’s advisory board, is a Sequoia Scout, and was a jury member for ADC’s 2018 Awards in Experiential Design.`,
-    about: 'text'
+    As a technology evangelist, she often speaks at conferences, about Mixed Reality technologies, Interaction Design, User Experience Design and Artificial Intelligence. 
+    
+    <a href="https://next.reality.news/news/nr30-next-realitys-30-people-watch-augmented-reality-2018-0186090/">Voted as Top 30 People to Watch in Augmented Reality 2018</a>`
   },
   {
     title: 'Virtual Reality Event',
@@ -54,7 +68,9 @@ export const Keynotes = () => (
             </div> */}
 
           <h4>{_speakers.name}</h4>
-          <p>{_speakers.bio}</p>
+          <p>
+            <div dangerouslySetInnerHTML={{ __html: _speakers.bio }} />
+          </p>
         </div>
       </div>
     ))}

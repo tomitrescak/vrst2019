@@ -19,6 +19,31 @@ body {
   font-weight: 400;
 }
 
+/* prgram table */
+
+.program thead {
+  display: none;
+}
+.program td {
+  padding: 16px;
+}
+
+.program th {
+  padding: 25px 16px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.program tr:nth-child(odd) {
+  background-color: #2c3845;
+  color: #dedede;
+}
+
+.program tr:nth-child(even) {
+  background-color: #45525f;
+  color: white;
+}
+
 .d-col-n {
   position: relative;
   width: 100%;

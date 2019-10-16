@@ -56,6 +56,15 @@ const Accessibility = () => (
             to provide basic infrastructure, such as tables and power.
           </li>
         </ul>
+        <p>
+          <br />
+          <h4>
+            <b>
+              UPDATE: The deadline for the competition application submission is 1/11 23:59 AoE. We
+              do have limited spaces available, so register as soon as possible to secure your spot!
+            </b>
+          </h4>
+        </p>
       </div>
     </div>
   </Layout>

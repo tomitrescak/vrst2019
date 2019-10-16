@@ -38,7 +38,7 @@ const InitialState = {
       Position: 'Program Chairs',
       Group: [
         {
-          Name: ['Thierry Duval (Western Sydney University)'],
+          Name: ['Thierry Duval (IMT Atlantique)'],
           Contact: ['papers2019@vrst.acm.org'],
           Hover: false
         },
@@ -139,8 +139,8 @@ const InitialState = {
       Position: 'Web Chair',
       Group: [
         {
-          Name: ['Gilbert Zhuo (Western Sydney University)'],
-          Contact: ['GilbertZhuo@gmail.com'],
+          Name: ['Tomas Trescak (Western Sydney University)'],
+          Contact: ['t.trescak@westernsydney.edu.au'],
           Hover: false
         }
       ]

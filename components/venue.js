@@ -11,21 +11,59 @@ export const Venue = () => (
         color: 'white'
       }}
     >
+      Hotels
+    </h4>
+
+    <p>
+      <strong>
+        <h5>Novotel Sydney Parramatta</h5>
+      </strong>
+      <br />
+      10% off the best available rate from the 12th-15th November for all VRST delegates.
+      <br />
+      <br />
+      Please email or call the hotel directly and mention that you are a part of the VRST conference
+      to receive the discount.
+      <br />
+      <br />
+      Email: H8787-re@accor.com <br />
+      Phone: 61 2 9630 4999
+      <br />
+    </p>
+
+    <p>
+      <strong>
+        <h5>Mercure Sydney Parramatta</h5>
+      </strong>
+      <br />
+      We would like to offer a static rate of $169.00 for Standard Queen and Standard Twin room at
+      the hotel.
+      <br />
+      Pre - paid rate offer.
+      <br />
+      Cut off for early bird special rate 31st October 2019.
+      <br />
+      <br />
+      Subject to this room type still becoming available at time of guest requirement. Once sold all
+      standard rooms we will still offer 10% off.
+      <br />
+      <br />
+      Email: H2123@accor.com <br />
+      Phone: 61 2 8836 1000
+      <br />
+    </p>
+
+    <h4
+      style={{
+        padding: '2em',
+        color: 'white'
+      }}
+    >
       Venue and Transportation
     </h4>
 
     <div>Western Sydney University - Parramatta City Campus (169 Macquarie Street Parramatta)</div>
 
-    <p>
-      <strong>Novotel Sydney Parramatta</strong>
-      <br />
-      Reservations: H8787-re@accor.com Phone: 61 2 9630 4999
-    </p>
-    <p>
-      <strong>Mercure Sydney Parramatta</strong>
-      <br />
-      Reservations: H2123@accor.com Phone: 61 2 8836 1000
-    </p>
     <p>
       <iframe
         style={{ border: '0px' }}

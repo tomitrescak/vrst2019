@@ -39,7 +39,7 @@ export const Registration = () => (
           <tr>
             <td>Student</td>
             <td>350 AUD</td>
-            <td>350 AUD</td>
+            <td>450 AUD</td>
           </tr>
           <tr>
             <td>Retiree</td>
