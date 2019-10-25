@@ -3,11 +3,11 @@ import { makeUrl } from './common';
 
 const news = [
   {
-    title: 'Keynote by Aleissia Leidacker from Magic Leap',
+    title: 'Keynote by Aleissia Laidacker from Magic Leap',
     date: ' 27/9/2019',
     author: 'Tomas Trescak',
     image: '/static/images/aleissia_wide.jpg',
-    text: `We are very proud to announce a keynote by Aleissia Leidacker, director of developer experience 
+    text: `We are very proud to announce a keynote by Aleissia Laidacker, director of developer experience 
   at Magic Leap. Also, due to unforeseen circumstances, Timoni will not be joining us at VRST. Aleissia has been voted as Top 30 People to Watch in Augmented Reality 2018.
   ,`
   },
