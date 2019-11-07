@@ -282,7 +282,15 @@ export const CFP = () => (
       <Attendance />
 
       <Section title="Guidelines for Presenters">
-        <p>To be announced ...</p>
+        <p>
+          We have two poster sessions preceded by a fast forward session, where in 30 seconds you
+          need to introduce your work. You need to prepare one slide and send it to the poster chair
+          a day prior to the poster session. Please put up your posters in the morning so delegates
+          will be able to see them prior to poster session. We will provide stickers for attendees
+          using to vote for best poster. Final decision for a best poster is made by the poster
+          chair. Please be present at your poster during the whole poster session. We announced your
+          poster session in the online program.
+        </p>
       </Section>
     </div>
 
@@ -361,7 +369,11 @@ export const CFP = () => (
 
       <Attendance />
       <Section title="Guidelines for Presenters">
-        <p>To be announced ...</p>
+        <p>
+          Each paper has an half an hour time slot. It is up to you how much time you want to leave
+          for questions, but we generally recommend at least 5-10 minutes for the discussion. Please
+          contact the session chair prior to commencement of your session and test your equipment.
+        </p>
       </Section>
     </div>
     <div>

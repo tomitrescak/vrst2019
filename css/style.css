@@ -25,7 +25,8 @@ body {
   display: none;
 }
 .program td {
-  padding: 16px;
+  padding: 12px;
+  vertical-align: top;
 }
 
 .program th {
@@ -1009,7 +1010,6 @@ table.sponsors th.yellow {
   overflow: hidden;
   text-overflow: ellipsis;
   display: block;
-  height: 200px;
 }
 
 .home-page-last-news-wrap .entry-content .entry-meta span {

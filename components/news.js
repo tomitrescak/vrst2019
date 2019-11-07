@@ -3,13 +3,22 @@ import { makeUrl } from './common';
 
 const news = [
   {
-    title: 'Keynote by Aleissia Laidacker from Magic Leap',
+    title: 'Welcome Reception',
+    date: ' 7/11/2019',
+    author: 'Tomas Trescak',
+    image: '/static/images/drinks.jpg',
+    text: `The VRST 2019 Welcome Reception will be held on 12 November, commencing with early registration at 2:30pm. Network with delegates from around the world, see the developer showcase and experience some fine Australian cuisine.
+    <center>
+    <a href="https://www.eventbrite.com.au/e/vrst-welcome-reception-tickets-79984560975">REGISTER NOW!</a>
+    </center>`
+  },
+  {
+    title: 'Keynote by Aleissia Laidacker',
     date: ' 27/9/2019',
     author: 'Tomas Trescak',
     image: '/static/images/aleissia_wide.jpg',
     text: `We are very proud to announce a keynote by Aleissia Laidacker, director of developer experience 
-  at Magic Leap. Also, due to unforeseen circumstances, Timoni will not be joining us at VRST. Aleissia has been voted as Top 30 People to Watch in Augmented Reality 2018.
-  ,`
+  at Magic Leap. Also, due to unforeseen circumstances, Timoni will not be joining us at VRST. Aleissia has been voted as Top 30 People to Watch in Augmented Reality 2018.`
   },
   {
     title: 'Developer Showcase',
@@ -17,7 +26,7 @@ const news = [
     author: 'Tomas Trescak',
     image: '/static/images/showcase.jpg',
     text: `We invite all start-up / indie / student developers who want to present their projects,  compete in our developer showcase, win some cool prizes and get feedback from experts. Deadline for submission is 1/11.`
-  },
+  }
   // {
   //   title: 'Keynote by Timoni West from Unity 3D',
   //   date: ' 26/4/2019',
@@ -25,14 +34,14 @@ const news = [
   //   image: '/static/images/news/timoni.jpg',
   //   text: `Timoni West is the Director of XR Research at Unity, where she leads a team of cross-disciplinary artists and engineers exploring new interfaces for human-computer interaction. Currently, her team focuses on spatial computing: how we will live, work, and create in a world where digital objects and the real world live side-by-side. One of her team’s first tools, EditorXR, a tool for editing Unity projects directly in virtual reality, won SF Design Week’s first-ever Virtual Tech award in 2018.`
   // },
-  {
-    title: 'Keynote by Professor Mark Billingurst from UNISA',
-    date: ' 14/4/2019',
-    author: 'Gilbert Zhuo',
-    image: '/static/images/news/Mark-Billinghurst.png',
-    text: `Mark Billinghurst is Professor of Human Computer Interaction at the University of South Australia in Adelaide, Australia. 
-    He earned a PhD in 2002 from the University of Washington and researches innovative computer interfaces that explore how virtual and real worlds can be merged, publishing over 300 papers in topics such as wearable computing, Augmented Reality and mobile interfaces. `
-  }
+  // {
+  //   title: 'Keynote by Professor Mark Billingurst from UNISA',
+  //   date: ' 14/4/2019',
+  //   author: 'Gilbert Zhuo',
+  //   image: '/static/images/news/Mark-Billinghurst.png',
+  //   text: `Mark Billinghurst is Professor of Human Computer Interaction at the University of South Australia in Adelaide, Australia.
+  //   He earned a PhD in 2002 from the University of Washington and researches innovative computer interfaces that explore how virtual and real worlds can be merged, publishing over 300 papers in topics such as wearable computing, Augmented Reality and mobile interfaces. `
+  // }
   // {
   //   title: 'Keynote by Mark Walsh, Pixar Animation Studios',
   //   date: '10/2/2019',
@@ -71,7 +80,7 @@ export const NewsItem = ({ width, title, author, image, date, text }) => (
         </div>
 
         <div className="entry-description">
-          <p>{text.substring(0, 210)} ...</p>
+          <p dangerouslySetInnerHTML={{ __html: text }}></p>
         </div>
       </div>
     </div>
