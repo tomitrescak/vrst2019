@@ -17,7 +17,7 @@ export const Introduction = () => (
                 </div>
               </div>
 
-              <CountDown />
+              {/* <CountDown /> */}
             </div>
           </div>
         </div>
@@ -32,18 +32,16 @@ export const Introduction = () => (
           <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
         </div>
       </div>
-      <div className="row">
+      {/* <div className="row">
         <div className="col-12 ">
           <div className="entry-footer">
             <a href={makeUrl('/submissions')} className="btn">
               Submission Instructions
             </a>
-            {/* <a href="#" className="btn current">
-                    See Lineup
-                  </a> */}
+           
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   </div>
 );

@@ -46,7 +46,7 @@ const days = [
       type: Types.Events
     },
     {
-      name: 'Keynote - Mark Walsh',
+      name: 'Keynote - Tomasz Bendarz',
       time: ['09:30', '10:30'],
       type: Types.Keynote
     },
@@ -61,7 +61,7 @@ const days = [
       sessions: [
         {
           name: 'Navigation & Locomotion',
-          chair: 'TBD',
+          chair: 'Kenny Mitchell',
           papers: [
             [
               '1089',
@@ -94,7 +94,7 @@ const days = [
       sessions: [
         {
           name: 'Avatars',
-          chair: 'TBD',
+          chair: 'Taehyun Rhee',
           papers: [
             [
               '1072',
@@ -115,7 +115,7 @@ const days = [
         },
         {
           name: 'Collaboration',
-          chair: 'TBD',
+          chair: 'Gun A. Lee',
           papers: [
             [
               '1087',
@@ -143,7 +143,7 @@ const days = [
       sessions: [
         {
           name: 'Engagement',
-          chair: 'TBD',
+          chair: 'Rick Skarbez',
           papers: [
             [
               '1236',
@@ -159,7 +159,7 @@ const days = [
         },
         {
           name: 'Mid-Air Techniques',
-          chair: 'TBD',
+          chair: 'Falk Schreiber',
           papers: [
             [
               '1097',
@@ -205,7 +205,7 @@ const days = [
       sessions: [
         {
           name: 'Haptics',
-          chair: 'TBD',
+          chair: 'Michael Vallance',
           papers: [
             [
               '1110',
@@ -221,7 +221,7 @@ const days = [
         },
         {
           name: 'Simulation & Graphics',
-          chair: 'TBD',
+          chair: 'Seungyong Lee',
           papers: [
             [
               '1213',
@@ -243,7 +243,7 @@ const days = [
       sessions: [
         {
           name: 'Displays & Visual Perception',
-          chair: 'TBD',
+          chair: 'Benoît Ozell',
           papers: [
             [
               '1039',
@@ -259,7 +259,7 @@ const days = [
         },
         {
           name: '3D Modelling and Authoring',
-          chair: 'TBD',
+          chair: 'Jean-Marc Gauthier',
           papers: [
             [
               '1149',
@@ -286,7 +286,7 @@ const days = [
       sessions: [
         {
           name: 'Devices',
-          chair: 'TBD',
+          chair: 'Tomomi Takashina',
           papers: [
             [
               '1201',
@@ -307,7 +307,7 @@ const days = [
         },
         {
           name: '3D Reconstruction',
-          chair: 'TBD',
+          chair: 'Krzysztof Pietroszek',
           papers: [
             [
               '1027',
@@ -387,7 +387,7 @@ const days = [
       sessions: [
         {
           name: 'Applications',
-          chair: 'TBD',
+          chair: 'Simon Hoermann',
           papers: [
             [
               '1107',
@@ -419,7 +419,7 @@ const days = [
       sessions: [
         {
           name: 'Monitoring',
-          chair: 'TBD',
+          chair: 'Penny Kyburz',
           papers: [
             [
               '1111',
@@ -451,7 +451,7 @@ const days = [
       sessions: [
         {
           name: 'Selection',
-          chair: 'TBD',
+          chair: 'J. Andreas Bærentzen',
           papers: [
             [
               '1163',
@@ -478,7 +478,7 @@ const days = [
       sessions: [
         {
           name: 'Manipulation',
-          chair: 'TBD',
+          chair: 'Thierry Duval',
           papers: [
             [
               '1135',

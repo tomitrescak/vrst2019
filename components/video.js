@@ -67,7 +67,7 @@ export const Video = () => (
               </strong>
             </p>
             <p>Camera-ready papers, posters, and demos</p> */}
-            <p>
+            {/* <p>
               AoE (Anywhere on Earth)
               <br />{' '}
               <strong>
@@ -75,7 +75,7 @@ export const Video = () => (
                 <em> November 1, 2019 </em>{' '}
               </strong>
             </p>
-            <p>Submission for Developer Showcase</p>
+            <p>Submission for Developer Showcase</p> */}
             <p>
               <strong>
                 {' '}
@@ -83,11 +83,11 @@ export const Video = () => (
               </strong>
             </p>
             <p>Conference in Sydney, Australia</p>
-            <p>
+            {/* <p>
               <strong> Symposium General Chair: </strong>
               <br />
               Tomas Trescak, Australia
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

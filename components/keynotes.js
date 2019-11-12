@@ -47,6 +47,22 @@ const speakers = [
     image: '/static/images/news/Mark-Billinghurst-p.png',
     bio: `Dr. Mark Billinghurst is one of the world's leading augmented reality researchers, focusing on innovative computer interfaces that explore how virtual and real worlds can be merged. Former director of the HIT Lab New Zealand (HIT Lab NZ) at the University of Canterbury in New Zealand, he has produced over 250 technical publications and presented demonstrations and courses at a wide variety of conferences.`,
     about: 'text'
+  },
+  {
+    title: 'Virtual Reality Event',
+    name: 'Tomasz Bednarz',
+    job:
+      'Director at the Expanded Perception & Interaction Centre (EPICentre) UNSW Art & Design and Team Leader at CSIRO Data61 ',
+    date: 'TBH',
+    image: '/static/images/tomasz.jpg',
+    bio: `Tomasz Bednarz is Associate Professor and Director at the Expanded Perception & Interaction Centre (EPICentre) UNSW Art & Design and Team Leader at CSIRO Data61 (Visual Analytics Team, Software & Computational Systems program).
+
+    His current role at the UNSW Art & Design reflects his conviction to a holistic approach to the wicked problems facing the collation, analytics and display of big data. His approach is expansive and encompasses the use of novel technologies (AR, VR, CAVE, Dome, AVIE), often in combination. Over the last couple of years, he has been involved in wide range of interdisciplinary projects in the area of immersive visualisation, human-computer interaction, computational imaging, visualisation, and simulations, artificial intelligence, computer graphics, and games.
+    
+    He also holds Adjunct positions at Queensland University of Technology (Science and Engineering Faculty, School of Mathematical Sciences), and University of South Australia (School of IT and Math Sciences).
+    
+    He is Chair of ACM SIGGRAPH Asia 2019. SIGGRAPH conferences are the world’s largest, most influential annual meetings and exhibitions in computer graphics and interactive techniques. The conference will be held for the very first time in Australia (Brisbane).`,
+    about: 'text'
   }
 ];
 
