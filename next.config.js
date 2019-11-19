@@ -1,18 +1,19 @@
-const withCSS = require('@zeit/next-css');
+const withCSS = require("@zeit/next-css");
 module.exports = withCSS({
   exportPathMap: function() {
     return {
-      '/': { page: '/' },
+      "/": { page: "/" },
       // '/venue': { page: '/venue' },
-      '/submissions': { page: '/submissions' },
-      '/accessibility': { page: '/accessibility' },
-      '/sponsors': { page: '/sponsors' },
-      '/showcase': { page: '/showcase' },
-      '/program': { page: '/program' }
+      "/submissions": { page: "/submissions" },
+      "/accessibility": { page: "/accessibility" },
+      "/proceedings": { page: "/proceedings" },
+      "/sponsors": { page: "/sponsors" },
+      "/showcase": { page: "/showcase" },
+      "/program": { page: "/program" }
       // '/scholarships': { page: '/scholarships' },
       // '/team': { page: '/team' },
       // '/visa': { page: '/visa' }
     };
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/vrst2019/' : ''
+  assetPrefix: process.env.NODE_ENV === "production" ? "/vrst2019/" : ""
 });
